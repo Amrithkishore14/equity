@@ -9,8 +9,6 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-      - key: PORT
-        value: 3000
       # Fill these securely in the Render dashboard before deploy
       - key: SESSION_SECRET
         sync: false
