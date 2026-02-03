@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Register for Equity Investor Club to start your finance learning journey." />
+  <meta property="og:title" content="Register | Equity Investor Club" />
+  <meta property="og:description" content="Create your Equity Investor Club account for beginner-friendly finance education." />
+  <meta property="og:image" content="/images/logo.jpg" />
+  <meta property="og:url" content="https://equityinvestorclub.com/register" />
+  <link rel="canonical" href="https://equityinvestorclub.com/register" />
+  <title>Register | Equity Investor Club</title>
+  <link rel="icon" href="/images/logo.jpg" />
+  <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+<body>
+  <div class="content-layer">
+  <main class="container auth-page">
+    <div class="brand" style="margin-bottom:16px;">
+      <img src="/images/logo.jpg" alt="logo" />
+      <span>Equity Investor Club</span>
+    </div>
+    <div class="form-card">
+      <h2>Create Account</h2>
+      <div id="registerAlert" class="alert" style="display:none;"></div>
+      <form id="registerForm">
+        <label>Name</label>
+        <input name="name" type="text" required />
+        <label>Email</label>
+        <input name="email" type="email" required />
+        <label>Password</label>
+        <input name="password" type="password" required minlength="8" />
+        <button type="submit" class="btn" style="width:100%; margin-top:6px;">Register</button>
+      </form>
+      <div style="margin-top:12px;" class="small">By registering you agree to our educational-only policy.</div>
+      <div class="flex-between" style="margin-top:12px;">
+        <a href="/login">Back to login</a>
+        <a href="/">Home</a>
+      </div>
+    </div>
+    <div class="svg-accent motion-panel" style="margin-top:18px;">
+      <img src="/public/images/neon-market.svg" alt="Growth illustration" />
+      <svg class="motion-line" viewBox="0 0 600 320" aria-hidden="true">
+        <defs>
+          <linearGradient id="motionGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#7cf0ff"/>
+            <stop offset="100%" stop-color="#ff7ad1"/>
+          </linearGradient>
+        </defs>
+        <path d="M12 240 C120 210 190 220 250 230 C320 240 350 150 430 150 C500 150 545 125 588 142" />
+        <circle cx="350" cy="150" r="6"/>
+        <circle cx="545" cy="142" r="6"/>
+      </svg>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="brand"><img src="/images/logo.jpg" alt="Logo" /><span>Equity Investor Club</span></div>
+      <div><small>We are not SEBI registered advisors. Educational purpose only.</small></div>
+      <p class="disclaimer">
+        Disclaimer:<br>
+        Equity Investor Club is not a SEBI registered advisor.<br>
+        All content shared on this website is for educational and learning purposes only.<br>
+        Market updates are derived from publicly available news and media sources.<br>
+        Users are advised to do their own analysis before making any investment decisions.<br>
+        Equity Investor Club does not provide investment, trading, or financial advice.
+      </p>
+    </div>
+  </footer>
+  </div>
+  <script src="/public/js/auth.js"></script>
+</body>
+</html>

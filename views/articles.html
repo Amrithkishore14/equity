@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Educational articles from Equity Investor Club. No tips, just learning content." />
+  <meta property="og:title" content="Educational Articles | Equity Investor Club" />
+  <meta property="og:description" content="Browse educational finance articles with disclaimers and moderated discussions." />
+  <meta property="og:image" content="/images/logo.jpg" />
+  <meta property="og:url" content="https://equityinvestorclub.com/articles" />
+  <link rel="canonical" href="https://equityinvestorclub.com/articles" />
+  <title>Educational Articles | Equity Investor Club</title>
+  <link rel="icon" href="/images/logo.jpg" />
+  <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+<body>
+  <div class="content-layer">
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="/"><img src="/images/logo.jpg" alt="Logo" /><span>Equity Investor Club</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/articles" class="active">Articles</a>
+        <a href="/learn">Learn</a>
+        <a href="/glossary">Glossary</a>
+      </nav>
+      <div class="actions"><a class="btn btn-outline" href="/login">Login</a><a class="btn" href="/register">Register</a></div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>Educational Articles</h1>
+    <p class="lead">Structured, SEO-friendly reads. No recommendations.</p>
+    <div id="articleList" class="cards needs-disclaimer"></div>
+    <div id="articleCompletePanel" class="update-card needs-disclaimer" style="display:none; margin-top:16px;">
+      <h3>Great work!</h3>
+      <p class="small" id="completeMessage">Marked as completed.</p>
+      <div id="nextSuggestion"></div>
+      <div class="actions" style="margin-top:10px; gap:8px;">
+        <a id="nextLink" class="btn" style="display:none;">Read next</a>
+        <a class="btn btn-outline" href="/user">Back to dashboard</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="brand"><img src="/images/logo.jpg" alt="Logo" /><span>Equity Investor Club</span></div>
+      <p class="small">Learn safely.</p>
+    </div>
+  </footer>
+  </div>
+  <script src="/public/js/edu.js"></script>
+  <script src="/public/js/main.js"></script>
+</body>
+</html>

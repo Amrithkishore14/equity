@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Subscription plans for Equity Investor Club educational access." />
+  <title>Subscriptions | Equity Investor Club</title>
+  <link rel="icon" href="/images/logo.jpg" />
+  <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+<body>
+  <div class="content-layer">
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="/"><img src="/images/logo.jpg" alt="Logo" /><span>Equity Investor Club</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/subscriptions" class="active">Subscriptions</a>
+      </nav>
+      <div class="actions"><a class="btn btn-outline" href="/login">Login</a><a class="btn" href="/register">Register</a></div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="badge">Educational access</div>
+    <h1>Choose a subscription</h1>
+    <p class="lead">Access educational stock reports, weekly summaries, and learning tools. No investment tips or prices.</p>
+    <div class="cards" style="margin-top:16px;">
+      <div class="card">
+        <h3>Starter</h3>
+        <p>Access to educational reports and weekly learning digest.</p>
+        <p class="small muted">For learners exploring fundamentals.</p>
+        <button class="btn" data-plan="Starter">Choose Plan</button>
+      </div>
+      <div class="card">
+        <h3>Pro</h3>
+        <p>Starter benefits plus priority Q&A and extended archives.</p>
+        <p class="small muted">For committed learners who want structured depth.</p>
+        <button class="btn" data-plan="Pro">Choose Plan</button>
+      </div>
+      <div class="card">
+        <h3>Institution</h3>
+        <p>Team access with centralized admin control and moderated comments.</p>
+        <p class="small muted">For campuses and learning clubs.</p>
+        <button class="btn" data-plan="Institution">Choose Plan</button>
+      </div>
+    </div>
+    <p class="small" style="margin-top:12px;">Payments are handled via our onboarding team. No investment advice is provided.</p>
+    <div id="subAlert" class="alert" style="display:none;"></div>
+    <div class="card" style="margin-top:14px;">
+      <h3>Prefer UPI?</h3>
+      <p>Send the subscription payment to <strong>amrithcricket@oksbi</strong> on GPay/UPI and email the proof to <a href="mailto:hello@equityinvestorclub.com">hello@equityinvestorclub.com</a>. We will activate your access after verification.</p>
+      <p class="small muted">Keep the transaction ID handy. No prices are displayed publicly; please follow the email instructions for confirmation.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="brand"><img src="/images/logo.jpg" alt="Logo" /><span>Equity Investor Club</span></div>
+      <p class="small">Educational purpose only.</p>
+    </div>
+  </footer>
+  </div>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="/public/js/main.js"></script>
+  <script src="/public/js/subscriptions.js"></script>
+</body>
+</html>

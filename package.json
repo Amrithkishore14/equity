@@ -1,0 +1,39 @@
+{
+  "name": "equityinvestorclub",
+  "version": "1.0.0",
+  "description": "Static-first finance education site with Express backend for Equity Investor Club",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "lint": "echo 'No linter configured'",
+    "test": "echo 'No tests yet'"
+  },
+  "keywords": [
+    "finance",
+    "education",
+    "express",
+    "sqlite"
+  ],
+  "author": "Equity Investor Club",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "connect-sqlite3": "^0.9.16",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "express-validator": "^7.3.1",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1",
+    "nodemailer": "^7.0.13",
+    "pdf-lib": "^1.17.1",
+    "razorpay": "^2.9.6",
+    "sqlite3": "^5.1.7",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

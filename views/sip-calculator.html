@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Simple SIP calculator for educational purposes by Equity Investor Club." />
+  <meta property="og:title" content="SIP Calculator | Equity Investor Club" />
+  <meta property="og:description" content="Compute SIP contributions for learning purposes. No recommendations or tips." />
+  <meta property="og:image" content="/images/logo.jpg" />
+  <meta property="og:url" content="https://equityinvestorclub.com/sip-calculator" />
+  <link rel="canonical" href="https://equityinvestorclub.com/sip-calculator" />
+  <title>SIP Calculator | Equity Investor Club</title>
+  <link rel="icon" href="/images/logo.jpg" />
+  <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+<body>
+  <div class="content-layer">
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="/"><img src="/images/logo.jpg" alt="Logo" /><span>Equity Investor Club</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/learn">Learn</a>
+        <a href="/sip-calculator" class="active">SIP Calc</a>
+      </nav>
+      <div class="actions"><a class="btn btn-outline" href="/login">Login</a><a class="btn" href="/register">Register</a></div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>SIP Calculator (Educational)</h1>
+    <p class="lead">Pure math. No recommendations. Enter numbers to see projected corpus.</p>
+    <div class="grid-two">
+      <div class="form-card needs-disclaimer">
+        <label>Monthly investment (₹)</label>
+        <input id="sipMonthly" type="number" value="5000" />
+        <label>Expected annual return (%)</label>
+        <input id="sipReturn" type="number" value="10" />
+        <label>Years</label>
+        <input id="sipYears" type="number" value="10" />
+        <button class="btn" id="sipCalcBtn">Calculate</button>
+        <div id="sipResult" class="alert" style="display:none; margin-top:10px;"></div>
+      </div>
+      <div class="card">
+        <h3>Formula</h3>
+        <p>Future Value = P * (( (1+r)^(n) - 1) / r ) * (1+r)</p>
+        <p class="small">P = monthly amount; r = monthly rate; n = months.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="brand"><img src="/images/logo.jpg" alt="Logo" /><span>Equity Investor Club</span></div>
+      <p class="small">No advice. Just math.</p>
+    </div>
+  </footer>
+  </div>
+  <script>
+    const btn = document.querySelector('#sipCalcBtn');
+    const resBox = document.querySelector('#sipResult');
+    btn.addEventListener('click', () => {
+      const P = Number(document.querySelector('#sipMonthly').value || 0);
+      const rYear = Number(document.querySelector('#sipReturn').value || 0) / 100;
+      const years = Number(document.querySelector('#sipYears').value || 0);
+      const r = rYear / 12;
+      const n = years * 12;
+      if (P <= 0 || r <= 0 || years <= 0) {
+        resBox.textContent = 'Enter positive numbers.';
+        resBox.className = 'alert error';
+        resBox.style.display = 'block';
+        return;
+      }
+      const fv = P * ((Math.pow(1 + r, n) - 1) / r) * (1 + r);
+      resBox.textContent = `Projected corpus: ₹${fv.toFixed(0)}`;
+      resBox.className = 'alert success';
+      resBox.style.display = 'block';
+    });
+  </script>
+  <script src="/public/js/main.js"></script>
+</body>
+</html>

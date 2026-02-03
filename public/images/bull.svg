@@ -1,0 +1,20 @@
+<svg width="360" height="240" viewBox="0 0 360 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bull silhouette">
+  <defs>
+    <linearGradient id="gradBull" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" stop-color="#7cf0ff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff7ad1" stop-opacity="0.95"/>
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="360" height="240" rx="18" fill="url(#gradBull)" opacity="0.16"/>
+  <path d="M40 150c22-22 52-30 88-30 28 0 55 12 79 12 20 0 32-10 44-24 7-8 14-22 18-33 1-4 5-7 9-6 6 1 9 7 8 13-3 14-9 33-6 38 8 14 26 9 40 9 6 0 10 5 8 11-4 13-19 23-37 23-21 0-41-10-52-10-6 0-10 2-10 6 0 5 6 8 15 10 6 2 9 6 8 11-2 8-11 14-24 14-10 0-21-4-32-10-10-6-25-8-45-8-19 0-33 2-48 8-8 3-19 6-30 6-22 0-42-13-48-34-2-7 2-14 8-16l28-10c10-4 19-10 26-17z" fill="url(#gradBull)" filter="url(#glow)" opacity="0.9"/>
+  <path d="M72 184c14-8 31-12 46-12 10 0 18 2 24 6" stroke="#ff7ad1" stroke-width="3" stroke-linecap="round" stroke-opacity="0.8"/>
+  <circle cx="98" cy="112" r="6" fill="#ff7ad1"/>
+  <circle cx="236" cy="112" r="4" fill="#ff7ad1"/>
+</svg>

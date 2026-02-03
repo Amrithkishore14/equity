@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Basic stock market class by Equity Investor Club. Educational, no tips or prices." />
+  <meta property="og:title" content="Stock Market Class | Equity Investor Club" />
+  <meta property="og:description" content="Guided, beginner-friendly sessions focused on education, not advice." />
+  <meta property="og:image" content="/images/logo.jpg" />
+  <meta property="og:url" content="https://equityinvestorclub.com/class" />
+  <link rel="canonical" href="https://equityinvestorclub.com/class" />
+  <title>Stock Market Class | Equity Investor Club</title>
+  <link rel="icon" href="/images/logo.jpg" />
+  <link rel="stylesheet" href="/public/css/style.css" />
+</head>
+<body>
+  <div class="content-layer">
+  <header>
+    <div class="container navbar">
+      <a class="brand" href="/"><img src="/images/logo.jpg" alt="Equity Investor Club logo" /><span>Equity Investor Club</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/learn">Learn</a>
+        <a href="/class" class="active">Class</a>
+      </nav>
+      <div class="actions">
+        <a class="btn btn-outline" href="/login">Login</a>
+        <a class="btn" href="/register">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="badge">Basic Stock Market Class</div>
+    <h1>Guided, beginner-friendly sessions</h1>
+    <p class="lead">Understand equities, risk, and discipline. No prices, no tips—pure learning.</p>
+
+    <div class="grid-two">
+      <div class="card">
+        <h3>What you'll learn</h3>
+        <ul class="list">
+          <li>Foundations: indices, shares, how markets work</li>
+          <li>Risk & behavior: volatility, diversification, emotions</li>
+          <li>Process: research basics, checklists, post-mortems</li>
+        </ul>
+        <p class="small disclaimer">Equity Investor Club is not a SEBI registered advisor. Educational only.</p>
+      </div>
+      <div class="form-card needs-disclaimer">
+        <h3>Contact for more information</h3>
+        <form id="inquiryForm">
+          <label>Name</label>
+          <input name="name" type="text" required />
+          <label>Email</label>
+          <input name="email" type="email" required />
+          <label>Phone (optional)</label>
+          <input name="phone" type="text" />
+          <label>Message</label>
+          <textarea name="message" rows="4" required></textarea>
+          <button class="btn" type="submit">Submit Inquiry</button>
+          <div id="inquiryAlert" class="alert" style="display:none; margin-top:10px;"></div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="brand"><img src="/images/logo.jpg" alt="Logo" /><span>Equity Investor Club</span></div>
+      <p class="small">Educational purpose only.</p>
+    </div>
+  </footer>
+  </div>
+  <script src="/public/js/disclaimer.js"></script>
+  <script src="/public/js/class.js"></script>
+  <script src="/public/js/main.js"></script>
+</body>
+</html>
